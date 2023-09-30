@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+color: #EEEEEE;
+background-color: #001C30;
+}
+
+header{
+    position: absolute; /* 3shan awl relative yeje 3leha */
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent; /* 3shan agdr a3ml edit */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* 3shan yeje foog el img */
+}
+
+.logo{
+    font-size: 25px;
+    color: #EEEEEE;
+    font-weight: 600;
+    position: relative;     /* 3shan yroo7 3al absolute*/
+    text-decoration: none; /* 3shan agdr a3ml edit */
+    
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+
+    top:0;  
+    right:0; /* 3SHAN EL ANIMATION */
+    
+    width: 100%;
+    height: 100%;
+    background: #053B50;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+}
+
+.navBar a{
+    position: relative;
+    font-size: 18px;
+    color: #001C30;
+    margin-left: 50px;
+    font-weight: 700;
+    text-decoration: none; /*TO remove undreline ta3 el nav bar*/
+    transition: .3s;
+
+}
+
+.navBar a::before{
+    content: '';
+    position: absolute;
+    top:0;  
+    right:0; /* 3SHAN EL ANIMATION */
+    width: 100%;
+    height: 100%;
+    background: #053B50;
+    animation: showRight 2.1s ease forwards; /* wgt l7d ma ytl3o */
+    animation-delay: .8s;
+    
+}
+
+@keyframes showRight{ /* eze b7t el with akt mn 0 ma bbyn el logo kaml */
+    100%{
+        width:0;
+    }
+}
+
+.navBar a:hover{        /* el hover 3han bs a7t el mouse 3leh yshtgl */
+    color: orange
+    ;
+}
+
+.secondPart{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: url(./mohannad.jfif) no-repeat ; /* ma 7det back ground image cuz i can do multiple edit on back ground */
+    background-position: right;    
+}
+
+.secContent{
+    max-width: 600px;
+}
+
+.secContent h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    
+}
+
+.secContent h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #053B50;
+    animation: showRight 5s ease forwards;
+    animation-delay: 0.8s;
+    
+}
+
+.secContent h3{
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.secContent p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+
+.secContent .btn-box{
+width: 345px;
+height: 50px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.btn-box a{
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(146, 106, 32);
+    border: 2px solid rgb(151, 106, 23);
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: .3s ;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #053B50;
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn-box a::before{
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #053B50;
+    animation: showRight 5s ease forwards;
+    animation-delay: .4s;
+}
+
+.btn-box a:hover{
+    width: 50%;
+}
+
+.social_wgss{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.social_wgss a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: orange
+    ;
+    z-index: -1;
+    transition: .5s;
+}
+
+.social_wgss a:hover::before{
+    width: 100%;
+}
+
+.social_wgss a:hover{
+    color: #081b29;
+}
+
+.social_wgss a{
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    width:40px;
+    height: 40px;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #176B87
+    ;
+    border-radius: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.harakt{
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 575px;
+    height: 100%;
+    background: transparent;
+    transition: .5s;
+}
+
+.harakt:hover{
+    background: #053B50;
+    opacity: 0.4;
+}
+
+/*First page */
+.secondPage{
+    padding: 20px;
+    border:2px solid #053B50;
+    margin: auto;
+    width: 100%;
+    height: 800px;
+}
+
+.contain{
+ position: relative;
+ width: 100%;    
+
+}
+
+.img{
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+
+   
+
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #EEEEEE;
+    background:#053B50;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #EEEEEE;
+    background:#053B50;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text:hover{
+    opacity: 0.9;
+    height: 700px;
+}
+
+.text1:hover{
+    opacity: 0.9;
+    height: 700px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 30px;
+    color:orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.dec{
+    font-size: 25px;
+    font-weight: 300;
+    color: #EEEEEE;
+    margin-top: 10px;
+}
+
+.thirdPage{
+    padding: 20px;
+    border: 2px solid #053B50;
+    height: 800px;
+}
+
+.img1{
+    display: block;
+    width: 79%;
+    margin-left: 155px;
+    height: 675px;
+}
+
+body{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
+}
+
+footer{
+    position:relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    background-color: #053B50;
+
+}
+
+footer .containerForFooter{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr   ;
+    grid-gap: 200px;
+}
+
+footer .containerForFooter .about h2{
+    position: relative;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 15px ;
+
+}
+
+footer .containerForFooter .about p{color: #EEEEEE;
+width: 350px;}
+
+.info{
+    margin-top: 20px;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-bottom: 16px;
+    color: orange;
+}
+
+.info a {
+    color: #EEEEEE;
+    font-size: 18px;
+    
+}
+
+@media only screen and (max-width: 780px) {
+    
+        footer{
+            overflow: hidden;
+            padding: 0%;
+        }
+        footer .containerForFooter{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            justify-content: center;
+            
+        }
+        .img1 {
+            width: 100%;
+            margin-left: 0%;
+        } 
+    
+}
+
+@media (hover: hover) and (pointer: fine) {
+ 
+
+    .harakt:hover {
+        background: #053B50;
+        opacity: 0.4;
+    }
+
+    .text:hover,
+    .text1:hover {
+        opacity: 0.9;
+        height: 700px;
+    }
+
+    footer .containerForFooter .about h2::before {
+        width: 100%;
+    }
+
+    .info li:hover span:nth-child(1) {
+        margin-bottom: 5px;
+    }
+
+ 
+    .social_wgss a:hover::before {
+        width: 100%;
+    }
+}
+
+ @media only screen and (max-width: 528px) {
+
+    .secondPart{
+    background: none;
+    
+}
+
+.header .navBar a{
+    color: orange;
+    display: flex; flex-wrap: wrap;
+}
+
+.img1 {
+    width: 75%;
+    margin-left: 12%;
+    height: 233px;
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    gap: 10px;
+}
+
+} 
+
+
+
+
+
+
+
+
+
+
+
